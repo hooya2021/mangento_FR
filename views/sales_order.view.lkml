@@ -455,7 +455,7 @@ view: sales_order {
 
   dimension: discount_amount {
     type: number
-    sql: ${TABLE}.discount_amount ;;
+    sql: -${TABLE}.discount_amount ;;
   }
 
   dimension: discount_canceled {
