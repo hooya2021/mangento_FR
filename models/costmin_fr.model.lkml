@@ -251,6 +251,10 @@ explore: sales_order {
     relationship: one_to_one
     sql_on: ${sales_order.entity_id} =${sales_order_item.order_id};;
   }
+  join: customer_entity {
+    relationship: one_to_one
+    sql_on: ${sales_order.customer_email} = ${customer_entity.email};;
+  }
 }
 
 explore: sales_order_address {}
